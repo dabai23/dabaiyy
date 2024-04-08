@@ -3,7 +3,7 @@ window.onload = function () {
     var query = document.getElementsByName('query')[0].value;
     if (query !== '求神呐') {
       event.preventDefault();
-      alert('只有在搜索“求神呐”才会跳转到search_results.html页面');
+      alert('不存在音乐，内心os：本站仅收录了‘求神呐’建议搜索这个');
     }
   });
 };
