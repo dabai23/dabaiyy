@@ -33,5 +33,11 @@
 
 欢迎贡献代码、提出问题或改进建议。请提交问题或请求以及您的贡献！
 
-## 贡献
+## 版权信息
 
+大白云音乐遵循 MIT License 开源协议发布，并提供免费使用，请勿用于非法用途。
+
+
+版权所有Copyright © 2024 by dabai (http://szvone.cn)
+
+All rights reserved。
