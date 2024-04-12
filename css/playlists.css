@@ -1,0 +1,135 @@
+/* 设置整个页面的基础样式，如字体家族、背景颜色、背景图片和基本文本颜色 */
+body {
+  font-family: 'Arial', sans-serif; /* 设定页面使用的字体为 Arial 或无衬线字体 */
+  margin: 0; /* 清除页面的外边距 */
+  padding: 0; /* 清除页面的内边距 */
+  background-color: #222; /* 设置背景颜色为深灰色 */
+  background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202208/9eb8cd0b4220ce19d5103751af92a09e--1226420142.jpg); /* 使用给定 URL 的图片作为背景 */
+  background-size: cover; /* 背景图片应完全覆盖容器，可能进行拉伸或裁剪 */
+  color: #000000; /* 设置页面主体文本颜色为黑色 */
+}
+/* 设置页面顶部固定的头部区域样式 */
+header {
+  color: #7fe9e9; /* 设置头部文本颜色 */
+  padding: 10px 0; /* 在头部区域顶部和底部添加10像素内边距 */
+  font-size: 18px; /* 设置头部字体大小为18像素 */
+  position: fixed; /* 设置头部为固定定位，使其在页面滚动时始终保持在可视区域内 */
+  width: 100%; /* 头部宽度占满整个浏览器窗口 */
+  top: 0; /* 头部距离浏览器顶部为0 */
+  z-index: 1000; /* 设置头部在层叠上下文中的层级，确保其始终位于其它元素之上 */
+}
+/* 设置导航栏样式 */
+nav {
+  text-align: center; /* 导航栏内文本居中对齐 */
+  margin-top: 5px; /* 从上一个元素（通常是头部）向下增加5像素的间距 */
+}
+/* 设置通用无序列表样式 */
+ul {
+  list-style: none; /* 移除默认的项目符号 */
+  padding: 0; /* 移除内边距 */
+}
+/* 设置列表项（li）的样式 */
+li {
+  display: inline; /* 将列表项显示为内联元素，使得它们在同一行显示 */
+  margin: 0 15px; /* 列表项之间左右间隔15像素 */
+}
+/* 设置链接（a）标签的基本样式 */
+a {
+  text-decoration: none; /* 取消链接下划线 */
+  color: #7fe9e9; /* 链接颜色设为浅青绿色 */
+  font-size: 18px; /* 链接字体大小为18像素 */
+}
+/* 设置页面主体区域（main）的基本样式 */
+main {
+  padding: 20px; /* 在主体区域周围增加20像素的内边距 */
+  text-align: center; /* 主体区域内的文本居中对齐 */
+}
+/* 设置页面标题的样式 */
+.page-title {
+  text-align: center; /* 标题文本居中对齐 */
+  font-family: 'Arial', sans-serif; /* 继承或强调页面标题同样使用 Arial 或无衬线字体 */
+  color: #fff; /* 标题颜色为白色 */
+}
+/* 设置通用section区域样式，用于实现弹性布局 */
+section {
+  display: flex; /* 使用Flexbox布局 */
+  justify-content: space-around; /* 子元素在主轴方向上平均分配空间 */
+  flex-wrap: wrap; /* 子元素可换行 */
+}
+/* 设置专门针对播放列表区域的样式 */
+.playlist-section {
+  display: flex; /* 使用Flexbox布局 */
+  flex-wrap: wrap; /* 子元素可换行 */
+  justify-content: space-between; /* 子元素在主轴方向上均匀分布，两端对齐 */
+  max-width: 1600px; /* 最大宽度限制为1600像素 */
+  margin: 0 auto; /* 自动居中显示，水平外边距为0，利用Flexbox特性实现居中 */
+  padding: 60px; /* 添加60像素的内边距 */
+}
+/* 设置播放列表卡片的样式 */
+.playlist-card {
+  margin-top: 120px; /* 从上一个元素开始有120像素的顶部外边距（可根据需求调整） */
+  width: calc(20% - 20px); /* 卡片宽度计算公式，占父容器的20%，同时减去两边各20像素的间距 */
+  margin-bottom: 70px; /* 设置卡片与下一个卡片之间的底部外边距为70像素 */
+}
+/* 设置通用div容器样式 */
+div {
+  background-color: rgb(198, 220, 228); /* 设置背景颜色为淡青色 */
+  padding: 20px; /* 内容与边界的内边距为20像素 */
+  margin: 15px; /* 边界与相邻元素之间的外边距为15像素 */
+  border-radius: 10px; /* 设置边框圆角为10像素 */
+  width: 30%; /* 设置宽度为父容器的30% */
+  text-align: left; /* 文本左对齐 */
+  position: relative; /* 设置相对定位，便于子元素绝对定位 */
+  overflow: hidden; /* 隐藏超出容器的内容 */
+  transition: transform 0.3s ease-in-out; /* 添加过渡效果，在鼠标悬停时平滑地改变transform属性 */
+}
+/* 设置当鼠标悬停在div容器上时的样式 */
+div:hover {
+  transform: scale(1.05); /* 鼠标悬停时，容器放大5% */
+}
+/* 设置通用图片样式 */
+img {
+  width: 100%; /* 图片宽度填充父容器 */
+  border-radius: 10px; /* 图片边框也设置为10像素圆角 */
+  margin-bottom: 10px; /* 图片下方预留10像素空白 */
+  transition: opacity 0.3s ease-in-out; /* 添加过渡效果，在鼠标悬停时平滑地改变透明度 */
+}
+/* 设置当鼠标悬停在图片上时的样式 */
+div:hover img {
+  opacity: 0.8; /* 鼠标悬停时，图片透明度降低至80% */
+}
+/* 设置标题样式 */
+h3 {
+  color: #f78383; /* 标题颜色为浅红色 */
+  font-size: 24px; /* 标题字体大小为24像素 */
+  margin-bottom: 10px; /* 标题下方预留10像素空白 */
+}
+/* 设置标签样式 */
+.tag {
+  display: inline-block; /* 以内联块元素显示标签 */
+  padding: 5px 10px; /* 在标签内部添加5像素的上下内边距和10像素的左右内边距 */
+  background-color: #b1f1f1; /* 设置标签背景颜色为淡绿色 */
+  color: #3f0808; /* 设置标签文本颜色为暗红色 */
+  border-radius: 10px; /* 设置标签圆角为10像素 */
+  margin-right: 5px; /* 标签之间右间隔5像素 */
+  margin-bottom: 5px; /* 标签下方预留5像素空白 */
+}
+/* 设置div容器内部段落样式 */
+div p {
+  color: #333; /* 文本颜色为深灰色 */
+}
+/* 设置通用段落样式 */
+p {
+  color: #7fe9e9; /* 文本颜色为浅青绿色 */
+  font-size: 16px; /* 字体大小为16像素 */
+  line-height: 1.6; /* 行高为字体大小的1.6倍，提高阅读体验 */
+}
+/* 设置底部页脚区域的样式 */
+footer {
+  color: #7fe9e9; /* 设置页脚文本颜色为浅青绿色 */
+  text-align: center; /* 页脚内容居中对齐 */
+  padding: 10px 0; /* 页脚顶部和底部内边距为10像素 */
+  position: fixed; /* 页脚采用固定定位，使其始终位于页面底部 */
+  bottom: 0; /* 页脚距离浏览器窗口底部为0 */
+  width: 100%; /* 页脚宽度占满整个浏览器窗口 */
+}

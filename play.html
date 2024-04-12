@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 设置字符编码 -->
+    <meta charset="UTF-8">
+    <!-- 设置页面在不同设备上的显示方式 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题 -->
+    <title>播放音乐 - 大白创意网络科技</title>
+    <!-- 设置网页图标 -->
+    <link rel="icon" type="image/png" href="images/音乐小图标1.png">
+    <!-- 引入播放页面的自定义样式表 -->
+    <link rel="stylesheet" type="text/css" href="css/play.css">
+    <!-- 引入全局样式表 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header>
+        <!-- 导航栏 -->
+        <nav>
+            <!-- 导航栏链接列表 -->
+            <ul>
+                <!-- 添加Logo并链接到首页 -->
+                <a class="logo" href="index.html">大白云音乐</a>
+                <!-- 链接到歌单列表页面 -->
+                <li><a href="playlists.html">歌单列表</a></li>
+                <!-- 链接到歌单详情页面 -->
+                <li><a href="playlist_detail.html">歌单详情</a></li>
+                <!-- 链接到专辑页面 -->
+                <li><a href="album.html">专辑</a></li>
+                <!-- 链接到歌手信息页面 -->
+                <li><a href="singer.html">歌手信息</a></li>
+                <!-- 当前页面高亮，链接到播放页面 -->
+                <li><a class="yemian" href="play.html">播放</a></li>
+                <!-- 链接到我的音乐页面 -->
+                <li><a href="my_music.html">我的音乐</a></li>
+                <!-- 链接到大白创意网络科技网站 -->
+                <li><a href="https://www.c1i.cn/">大白创意网络科技</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 主体内容 -->
+    <main>
+        <!-- 正在播放区域 -->
+        <section>
+            <!-- 标题 -->
+            <h2>正在播放</h2>
+            <!-- 音频播放器 -->
+            <audio controls id="audio-player">
+                <!-- 音频源 -->
+                <source src="images/求神呐.mp3" type="audio/mpeg">
+            </audio>
+            <!-- 切换歌曲按钮 -->
+            <button class="switch-button" onclick="switchSong()">切换歌曲</button>
+            <!-- 歌曲标题 -->
+            <div>
+                <h3 id="song-title">求神呐 - 柏鹿（如果歌词没有加载出来请点击“切换歌曲”）</h3>
+            </div>
+            <!-- 歌词容器 -->
+            <div class="lyrics-container">
+                <!-- 两个歌词列 -->
+                <div class="lyrics-column">
+                </div>
+                <div class="lyrics-column">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 页面底部 -->
+    <footer>
+        <!-- 版权信息 -->
+        <p>Copyright &copy; 2024 大白创意网络科技</p>
+    </footer>
+    <!-- 返回顶部按钮 -->
+    <div class="backTop" id="backTop">Top</div>
+    <!-- 引入JavaScript文件 -->
+    <script src="js/style.js"></script>
+    <!-- 引入播放页面的JavaScript文件 -->
+    <script src="js/play.js"></script>
+</body>
+</html>

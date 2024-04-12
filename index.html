@@ -1,71 +1,103 @@
 <!DOCTYPE html>
 <html lang="zh">
-
 <head>
+    <!-- 设置字符编码为UTF-8 -->
     <meta charset="UTF-8">
+    <!-- 兼容IE浏览器 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动端优化 -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>云音天籁</title>
+    <!-- 页面标题 -->
+    <title>大白云音乐</title>
+    <!-- 设置favicon图标 -->
     <link rel="icon" type="image/png" href="images/音乐小图标1.png">
-    <link rel="stylesheet" type="text/css" href="CSS/index.css">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <!-- 引入样式表 -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
+    <!-- 头部区域 -->
     <header>
+        <!-- 导航栏 -->
         <nav>
+            <!-- 导航链接 -->
             <ul>
-                <li><a href="index.html">主页</a></li>
-                <li><a href="Files/playlists.html">歌单列表</a></li>
-                <li><a href="Files/playlist_detail.html">歌单详情</a></li>
-                <li><a href="Files/album.html">专辑</a></li>
-                <li><a href="Files/singer.html">歌手信息</a></li>
-                <li><a href="Files/play.html">播放</a></li>
-                <li><a href="Files/search.html">搜索</a></li>
-                <li><a href="Files/my_music.html">我的音乐</a></li>
+                <!-- logo -->
+                <a class="logo" href="index.html">大白云音乐</a>
+                <!-- 链接列表 -->
+                <li><a href="playlists.html">歌单列表</a></li>
+                <li><a href="playlist_detail.html">歌单详情</a></li>
+                <li><a href="album.html">专辑</a></li>
+                <li><a href="singer.html">歌手信息</a></li>
+                <li><a href="play.html">播放</a></li>
+                <li><a href="my_music.html">我的音乐</a></li>
+                <!-- 外部链接 -->
+                <li><a href="https://www.c1i.cn/">大白创意网络科技</a></li>
             </ul>
         </nav>
     </header>
+    <!-- 主要内容区域 -->
     <main>
+        <!-- 主区域 -->
         <section id="hero">
-            <h1>欢迎来到云音天籁</h1>
-            <p>发现，聆听，分享</p>
+            <!-- 标题 -->
+            <h1>欢迎来到大白云音乐</h1>
+            <!-- 文本 -->
+            <a class="text1">让我们一起</a>
+            <a id="text">发现，聆听，分享</a>
+            <a class="text1">好音乐</a>
+            <!-- 描述 -->
             <p>用音乐开启美好旅程，体验不一样的音乐世界</p>
+            <!-- 向下滚动指示符 -->
             <div id="scroll-down">↓</div>
         </section>
+        <!-- 特色歌单区域 -->
         <section id="featured-playlists">
+            <!-- 歌单卡片1 -->
             <div class="playlist-card">
+                <!-- 图片 -->
                 <img src="images/专辑.jpg" alt="歌单1">
+                <!-- 标题 -->
                 <h3>歌单 SATE</h3>
+                <!-- 描述 -->
                 <p>这是一个精选歌单，包含了多首轻柔抒情的音乐，让你在音乐的海洋里感受轻松愉悦的氛围。</p>
-                <div><a href="Files/playlists.html">歌单列表</a></div>
+                <!-- 链接 -->
+                <div><a href="/playlists.html">歌单列表</a></div>
             </div>
+            <!-- 歌单卡片2 -->
             <div class="playlist-card">
                 <img src="images/专辑1.jpg" alt="歌单2">
                 <h3>歌单 CLOSER</h3>
                 <p>这是一个精选歌单，融合了多种音乐风格，让你在音乐的旅程中感受到愉悦和喜悦的情绪。</p>
-                <div><a href="Files/playlist_detail.html">歌单详细</a></div>
+                <div><a href="/playlist_detail.html">歌单详细</a></div>
             </div>
+            <!-- 歌单卡片3 -->
             <div class="playlist-card">
                 <img src="images/专辑-1.jpg" alt="歌单3">
                 <h3>歌单 Somber</h3>
                 <p>这是一个精选歌单，包含了多首深沉、忧郁的音乐，带你陷入音乐的忧伤韵律，感受那份深刻的情感共鸣。</p>
-                <div><a href="Files/album.html">专辑</a></div>
+                <div><a href="/album.html">专辑</a></div>
             </div>
+            <!-- 歌单卡片4 -->
             <div class="playlist-card">
                 <img src="images/专辑2.jpg" alt="歌单4">
                 <h3>歌单 Dreamy</h3>
                 <p>这是一个精选歌单，收录了多首梦幻般的旋律，带你进入一个梦幻、柔和的音乐空间。</p>
-                <div><a href="Files/singer.html">歌手信息</a></div>
+                <div><a href="/singer.html">歌手信息</a></div>
             </div>
         </section>
+        <!-- 内容底部空白区域 -->
         <div id="content-bottom-margin"></div>
     </main>
+    <!-- 底部区域 -->
     <footer>
-        <p>&copy; 2024 大白创意网络科技</p>
+        <!-- 版权声明 -->
+        <p>Copyright &copy; 2024 大白创意网络科技</p>
     </footer>
-
-    <script src="JS/index.js"></script>
+    <!-- 返回顶部按钮 -->
+    <div class="backTop" id="backTop">Top</div>
+    <!-- 引入JavaScript文件 -->
+    <script src="js/index.js"></script>
+    <script src="js/style.js"></script>
 </body>
-
 </html>

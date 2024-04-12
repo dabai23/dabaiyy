@@ -1,0 +1,97 @@
+/* 全局样式 */
+body {
+  font-family: 'Arial', sans-serif; /* 设置字体为Arial，如果找不到则使用无衬线字体 */
+  margin: 0; /* 去除页面四周的默认外边距 */
+  padding: 0; /* 去除页面内部的默认内边距 */
+  background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202208/9eb8cd0b4220ce19d5103751af92a09e--1226420142.jpg); /* 设置背景图片 */
+  background-size: cover; /* 使背景图片完全覆盖背景区域 */
+  background-attachment: fixed; /* 背景图片固定，不随滚动条移动 */
+  background-repeat: no-repeat; /* 禁止背景图片平铺 */
+  background-position: center; /* 背景图片居中对齐 */
+  color: #000000; /* 设置文本颜色为黑色 */
+  overflow-x: hidden; /* 隐藏水平方向的滚动条 */
+  margin-top: 50px; /* 上边距设置为50像素 */
+}
+header {
+  color: #7fe9e9; /* 设置头部文字颜色 */
+  padding: 10px 0; /* 头部的上内边距和下内边距为10像素 */
+  font-size: 18px; /* 设置字体大小 */
+  position: fixed; /* 头部元素固定定位 */
+  width: 100%; /* 宽度100%，占据整个视口宽度 */
+  top: 0; /* 固定在顶部 */
+  z-index: 1000; /* 设置较高的z-index值，确保头部在其他元素之上 */
+}
+nav {
+  text-align: center; /* 导航栏内容居中对齐 */
+  margin-top: 5px; /* 导航栏上边距设置为5像素 */
+}
+nav ul {
+  list-style: none; /* 去除列表项符号 */
+  padding: 0; /* 去除列表内部的默认内边距 */
+  margin: 0; /* 去除列表外部的默认外边距 */
+}
+nav ul li {
+  display: inline; /* 列表项显示为行内元素 */
+  margin-right: 20px; /* 每个列表项之间右外边距为20像素 */
+}
+nav ul li a {
+  text-decoration: none; /* 去除链接的下划线 */
+  color: #fff; /* 设置链接颜色为白色 */
+  transition: color 0.3s ease; /* 添加平滑的颜色过渡效果，持续0.3秒 */
+}
+nav ul li a:hover {
+  color: #ffd700; /* 鼠标悬停时链接颜色变为黄色 */
+}
+h3 {
+  color: #1c2b26; /* 设置标题颜色 */
+}
+p {
+  color: rgb(47, 87, 77); /* 设置段落颜色 */
+}
+main {
+  text-align: center; /* 主要内容居中对齐 */
+  margin-top: 80px; /* 主要内容上边距设置为80像素 */
+}
+section {
+  background-color: rgba(255, 255, 255, 0.8); /* 设置半透明白色背景 */
+  border-radius: 12px; /* 设置圆角边框 */
+  margin: 20px auto; /* 自动居中，上下外边距为20像素 */
+  padding: 20px; /* 内边距为20像素 */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+  width: 80%; /* 宽度设置为80% */
+  text-align: center; /* 文本居中对齐 */
+}
+audio {
+  width: 100%; /* 音频元素宽度100%，自适应容器宽度 */
+  margin-bottom: 20px; /* 底部外边距为20像素 */
+}
+.switch-button {
+  background-color: #ff4500; /* 按钮背景颜色 */
+  color: #fff; /* 按钮文字颜色 */
+  padding: 10px 20px; /* 内边距设置为10像素（上下）和20像素（左右） */
+  font-size: 16px; /* 字体大小 */
+  border: none; /* 去除边框 */
+  border-radius: 5px; /* 圆角边框 */
+  cursor: pointer; /* 鼠标指针变为手形 */
+  transition: background-color 0.3s ease; /* 添加背景颜色过渡效果 */
+}
+.switch-button:hover {
+  background-color: #fc607a; /* 悬停时按钮背景颜色 */
+}
+footer {
+  text-align: center; /* 底部内容居中对齐 */
+  padding: 10px 0; /* 底部上下的内边距为10像素 */
+  position: fixed; /* 底部元素固定定位 */
+  bottom: 0; /* 固定在底部 */
+  width: 100%; /* 宽度100%，占据整个视口宽度 */
+}
+footer p {
+  color: #7fe9e9; /* 底部文字颜色 */
+}
+.lyrics-container {
+  display: flex; /* 使用弹性布局 */
+  justify-content: space-between; /* 子元素在主轴上均匀分布 */
+}
+.lyrics-column {
+  width: 48%; /* 歌词列宽度设置为48%，留出间隔 */
+}

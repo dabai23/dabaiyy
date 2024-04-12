@@ -1,0 +1,150 @@
+/* 设置整体样式 */
+body {
+  font-family: 'Arial', sans-serif; /* 使用Arial字体 */
+  margin: 0; /* 去除默认边距 */
+  padding: 0; /* 去除默认填充 */
+  background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202208/9eb8cd0b4220ce19d5103751af92a09e--1226420142.jpg); /* 设置背景图片 */
+  background-size: cover; /* 背景图片铺满整个屏幕 */
+  background-attachment: fixed; /* 固定背景图片 */
+  background-repeat: no-repeat; /* 不重复背景图片 */
+  background-position: center; /* 背景图片居中 */
+  overflow-x: hidden; /* 防止水平滚动 */
+  margin-top: 50px; /* 顶部空白 */
+}
+/* 设置页眉样式 */
+header {
+  color: #7fe9e9; /* 设置字体颜色 */
+  padding: 10px 0; /* 上下填充 */
+  font-size: 18px; /* 设置字体大小 */
+  position: fixed; /* 固定在页面顶部 */
+  width: 100%; /* 宽度100% */
+  top: 0; /* 顶部对齐 */
+  z-index: 1000; /* 位于最顶层 */
+}
+/* 设置导航菜单样式 */
+nav {
+  text-align: center; /* 文本居中 */
+  margin-top: 5px; /* 顶部空白 */
+}
+nav ul {
+  list-style: none; /* 去除列表样式 */
+  padding: 0; /* 去除默认填充 */
+  margin: 0; /* 去除默认边距 */
+}
+nav ul li {
+  display: inline; /* 行内显示 */
+  margin-right: 20px; /* 右侧空白 */
+}
+nav ul li a {
+  text-decoration: none; /* 去除链接下划线 */
+  color: #fff; /* 设置字体颜色 */
+  transition: color 0.3s ease; /* 颜色渐变过渡 */
+}
+nav ul li a:hover {
+  color: #ffd700; /* 悬停时改变颜色 */
+}
+/* 设置主内容样式 */
+main {
+  text-align: center; /* 文本居中 */
+  margin-top: 80px; /* 顶部空白 */
+}
+/* 设置英雄区域样式 */
+#hero {
+  background: no-repeat; /* 不重复背景图片 */
+  color: #fff; /* 设置字体颜色 */
+  padding: 100px 0; /* 上下填充 */
+  text-align: center; /* 文本居中 */
+  position: relative; /* 相对定位 */
+  margin-bottom: 50px; /* 底部空白 */
+}
+#hero h1 {
+  font-size: 3em; /* 设置字体大小 */
+  margin-bottom: 20px; /* 底部空白 */
+}
+#hero p {
+  font-size: 1.2em; /* 设置字体大小 */
+  margin-bottom: 30px; /* 底部空白 */
+}
+/* 设置文本样式 */
+#text {
+  font-size: 1.5em; /* 设置字体大小 */
+  margin-bottom: 20px; /* 底部空白 */
+}
+.text1 {
+  font-size: 1.5em; /* 设置字体大小 */
+  margin-bottom: 20px; /* 底部空白 */
+}
+/* 设置滚动提示样式 */
+#scroll-down {
+  position: absolute; /* 绝对定位 */
+  bottom: 20px; /* 底部空白 */
+  left: 50%; /* 左侧居中 */
+  transform: translateX(-50%); /* 水平居中 */
+  font-size: 24px; /* 设置字体大小 */
+  cursor: pointer; /* 鼠标指针样式 */
+  color: #fff; /* 设置字体颜色 */
+}
+/* 设置推荐播放列表区域样式 */
+#featured-playlists {
+  display: flex; /* 使用 Flex 布局 */
+  justify-content: space-around; /* 均匀分布子元素 */
+  flex-wrap: wrap; /* 换行 */
+  padding: 20px; /* 填充 */
+  margin-bottom: 50px; /* 底部空白 */
+}
+/* 设置内容底部间距 */
+#content-bottom-margin {
+  height: 100px; /* 设置高度 */
+}
+/* 设置播放列表卡片样式 */
+.playlist-card {
+  background-color: #fff; /* 背景颜色 */
+  border-radius: 8px; /* 圆角 */
+  margin: 20px; /* 外边距 */
+  padding: 20px; /* 填充 */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+  width: 250px; /* 宽度 */
+  text-align: left; /* 文本左对齐 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 过渡效果 */
+  position: relative; /* 相对定位 */
+  overflow: hidden; /* 溢出隐藏 */
+}
+.playlist-card:hover {
+  transform: scale(1.05); /* 悬停时缩放 */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* 悬停时添加阴影 */
+}
+.playlist-card img {
+  border-radius: 8px; /* 圆角 */
+  width: 100%; /* 宽度100% */
+  height: auto; /* 自适应高度 */
+  transition: transform 0.3s ease; /* 过渡效果 */
+}
+.playlist-card:hover img {
+  transform: scale(1.1); /* 悬停时图片放大 */
+}
+.playlist-card h3 {
+  margin-top: 15px; /* 顶部空白 */
+  color: #333; /* 设置字体颜色 */
+}
+.playlist-card p {
+  color: #666; /* 设置字体颜色 */
+}
+.playlist-card div a {
+  color: #7fe9e9; /* 设置字体颜色 */
+  transition: color 0.3s ease; /* 颜色渐变过渡 */
+}
+.playlist-card div a:hover {
+  color: #ffd700; /* 悬停时改变颜色 */
+}
+/* 设置页脚样式 */
+footer {
+  color: #7fe9e9; /* 设置字体颜色 */
+  text-align: center; /* 文本居中 */
+  padding: 10px 0; /* 上下填充 */
+  position: fixed; /* 固定在页面底部 */
+  bottom: 0; /* 底部对齐 */
+  width: 100%; /* 宽度100% */
+}
+footer span {
+  font-size: 12px; /* 设置字体大小 */
+}

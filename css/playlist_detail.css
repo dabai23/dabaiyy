@@ -1,0 +1,141 @@
+/* 设置整个页面的基础样式，字体、背景图、颜色等 */
+body {
+  font-family: 'Arial', sans-serif; /* 使用 Arial 字体作为基础字体，如果没有则使用无衬线字体 */
+  margin: 0; /* 清除 body 的上下左右外边距 */
+  padding: 0; /* 清除 body 内部的上下左右内边距 */
+  background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202208/9eb8cd0b4220ce19d5103751af92a09e--1226420142.jpg); /* 设置背景图片 */
+  background-size: cover; /* 背景图片填充方式为覆盖整个容器，可能裁剪部分图像以适应尺寸 */
+  background-attachment: fixed; /* 背景图片固定在视口上，不会随着内容滚动而滚动 */
+  background-repeat: no-repeat; /* 不重复显示背景图片 */
+  background-position: center; /* 背景图片居中显示 */
+  color: #fff; /* 文本颜色为白色 */
+  overflow-x: hidden; /* 隐藏水平方向上的溢出内容 */
+  display: flex; /* 将 body 显示为弹性布局容器 */
+  flex-direction: column; /* 主轴方向为垂直方向 */
+  align-items: center; /* 子元素沿交叉轴居中对齐 */
+  min-height: 100vh; /* 页面最小高度为视窗高度 */
+}
+/* 设置头部（header）区域的样式 */
+header {
+  color: #7fe9e9; /* 文本颜色 */
+  padding: 10px 0; /* 上下内边距为10像素 */
+  font-size: 18px; /* 文字大小为18像素 */
+  position: fixed; /* 固定定位，使 header 总是保持在浏览器窗口的指定位置 */
+  width: 100%; /* 宽度充满整个屏幕 */
+  top: 0; /* 顶部与浏览器窗口顶部对齐 */
+  z-index: 1000; /* 设置较大的 z-index 值，确保其层级在其他元素之上 */
+}
+/* 设置导航栏（nav）及其内部结构样式 */
+nav {
+  text-align: center; /* 导航栏内的文本居中对齐 */
+  margin-top: 5px; /* 与上方元素间距为5像素 */
+}
+nav ul {
+  list-style: none; /* 移除列表默认样式 */
+  padding: 0; /* 移除内边距 */
+  margin: 0; /* 移除外边距 */
+}
+nav ul li {
+  display: inline; /* 将列表项并排显示 */
+  margin-right: 20px; /* 每个列表项之间的右侧间距为20像素 */
+}
+nav ul li a {
+  text-decoration: none; /* 取消链接下划线 */
+  color: #fff; /* 链接文字颜色为白色 */
+  font-size: 18px; /* 链接字体大小为18像素 */
+  transition: color 0.3s ease; /* 添加过渡效果，当鼠标悬停时颜色变化平滑进行 */
+}
+/* 当鼠标悬停在导航栏链接上时的样式 */
+nav ul li a:hover {
+  color: #ffd700; /* 链接文字颜色变为金色 */
+}
+/* 设置主要内容区域（main）的样式 */
+main {
+  display: flex; /* 使用弹性布局 */
+  flex-direction: column; /* 子元素垂直排列 */
+  align-items: center; /* 子元素沿交叉轴居中对齐 */
+  justify-content: center; /* 子元素沿主轴居中对齐 */
+  margin-top: 40px; /* 与上方元素间距为40像素 */
+}
+/* 设置嵌套在 main 内部 div 中的 img 标签样式 */
+div div img {
+  width: 200px; /* 图片宽度为200像素 */
+}
+/* 设置 section 区域的基本样式 */
+section {
+  background-color: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+  border-radius: 12px; /* 圆角边框 */
+  margin: 20px auto; /* 上下左右外边距为20像素，且自动居中 */
+  padding: 40px; /* 内边距为40像素 */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 盒阴影效果 */
+  width: 100%; /* 宽度填满父容器 */
+  text-align: center; /* 文本居中对齐 */
+}
+/* 设置 section 内部的 img 标签样式 */
+section img {
+  border-radius: 12px; /* 图片圆角边框 */
+  width: 800px; /* 图片宽度为800像素 */
+  height: auto; /* 自动调整高度以保持宽高比 */
+  margin: 0 auto 40px; /* 居中显示，并与下方元素间距为40像素 */
+  display: block; /* 作为块级元素显示 */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* 图片阴影效果 */
+}
+/* 设置 section 内的标题和段落样式 */
+section h2,
+section p {
+  color: #333; /* 文本颜色为深灰色 */
+  margin-bottom: 20px; /* 与下方元素间距为20像素 */
+}
+/* 设置特殊的 h3 标题样式 */
+section h3 {
+  color: #6f4ffe; /* 文本颜色为紫色 */
+}
+/* 设置歌曲列表区域样式 */
+.song-list {
+  display: flex; /* 使用弹性布局 */
+  flex-wrap: wrap; /* 允许换行 */
+  justify-content: space-around; /* 子元素间均匀分布，两侧留白 */
+  margin-top: 20px; /* 与上方元素间距为20像素 */
+}
+/* 设置单个歌曲卡片样式 */
+.song-card {
+  background-color: rgba(255, 255, 255, 0.95); /* 半透明白色背景 */
+  border-radius: 12px; /* 圆角边框 */
+  margin: 10px; /* 与其他卡片之间的间距为10像素 */
+  padding: 20px; /* 内边距为20像素 */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 盒阴影效果 */
+  width: calc(30% - 20px); /* 计算宽度：父容器宽度的30%减去20像素 */
+  text-align: center; /* 文本居中对齐 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果，包括缩放和平移变换以及阴影效果 */
+}
+/* 当鼠标悬停在歌曲卡片上时的样式 */
+.song-card:hover {
+  transform: scale(1.05); /* 缩放比例为105%，即放大5% */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* 阴影加深 */
+}
+/* 歌曲卡片中的标题样式 */
+.song-card h4 {
+  margin-bottom: 10px; /* 与下方元素间距为10像素 */
+  color: #4facfe; /* 文本颜色为蓝色 */
+  font-size: 20px; /* 字体大小为20像素 */
+}
+/* 歌曲卡片中的副标题或描述样式 */
+.song-card p {
+  color: #65dd03; /* 文本颜色为绿色 */
+  font-size: 16px; /* 字体大小为16像素 */
+  margin-bottom: 8px; /* 与下方元素间距为8像素 */
+}
+/* 歌曲卡片中的其他信息样式 */
+.song-card span {
+  display: block; /* 作为块级元素显示 */
+  color: pink; /* 文本颜色为粉色 */
+  font-size: 14px; /* 字体大小为14像素 */
+}
+/* 设置号召性操作区域样式 */
+.call-to-action {
+  background-color: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+  border-radius: 12px; /* 圆角边框 */
+  margin: 20px auto; /* 外边距为20像素，且自动居中 */
+  padding: 20px; /* 内边距为20像素 */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 盒阴影效果 */
+  width: 100%; /* 宽度填满父容器

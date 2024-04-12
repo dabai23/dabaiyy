@@ -1,0 +1,159 @@
+/* 设置页面基本样式 */
+body {
+  font-family: 'Arial', sans-serif; /* 设置字体 */
+  margin: 0; /* 清除页面默认的边距 */
+  padding: 0; /* 清除页面默认的内边距 */
+  background-image: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202208/9eb8cd0b4220ce19d5103751af92a09e--1226420142.jpg); /* 设置背景图片 */
+  background-size: cover; /* 背景图片填充整个屏幕 */
+  background-attachment: fixed; /* 固定背景图片，不随滚动条滚动 */
+  background-repeat: no-repeat; /* 不重复背景图片 */
+  background-position: center; /* 将背景图片放置在屏幕中央 */
+  color: #fff; /* 设置文本颜色为白色 */
+  overflow-x: hidden; /* 隐藏水平方向的滚动条 */
+  display: flex; /* 使用 Flex 布局 */
+  flex-direction: column; /* 垂直方向排列子元素 */
+  align-items: center; /* 水平居中对齐子元素 */
+  min-height: 100px; /* 设置最小高度为 100px */
+}
+/* 设置页眉样式 */
+header {
+  color: #ffffff; /* 设置文本颜色为白色 */
+  padding: 10px 0; /* 设置上下内边距为 10px，左右内边距为 0 */
+  font-size: 18px; /* 设置字体大小为 18px */
+  position: fixed; /* 设置固定定位 */
+  width: 100%; /* 宽度占满整个屏幕 */
+  top: 0; /* 距离顶部为 0 */
+  z-index: 1000; /* 设置层级为最高 */
+}
+/* 设置导航栏样式 */
+nav {
+  text-align: center; /* 文本居中对齐 */
+  margin-top: 5px; /* 顶部外边距为 5px */
+}
+nav ul {
+  list-style: none; /* 清除列表样式 */
+  padding: 0; /* 清除内边距 */
+  margin: 0; /* 清除外边距 */
+}
+nav ul li {
+  display: inline; /* 内联显示 */
+  margin-right: 20px; /* 右侧外边距为 20px */
+}
+nav ul li a {
+  text-decoration: none; /* 清除链接下划线 */
+  color: #fff; /* 设置链接文本颜色为白色 */
+}
+nav ul li a:hover {
+  color: #4e9ffc; /* 鼠标悬停时设置链接文本颜色 */
+}
+nav ul li a:active {
+  color: #9641f8; /* 链接被点击时设置文本颜色 */
+}
+/* 设置主要内容区域样式 */
+main {
+  display: flex; /* 使用 Flex 布局 */
+  flex-direction: column; /* 垂直方向排列子元素 */
+  align-items: center; /* 水平居中对齐子元素 */
+  justify-content: center; /* 垂直居中对齐子元素 */
+  margin-top: 80px; /* 顶部外边距为 80px */
+}
+/* 设置容器样式 */
+.container {
+  text-align: left; /* 左对齐文本 */
+  max-width: 800px; /* 设置最大宽度为 800px */
+  margin: 0 auto; /* 居中显示 */
+  padding: 20px; /* 设置内边距为 20px */
+}
+/* 设置节样式 */
+section {
+  border-radius: 12px; /* 设置圆角 */
+  margin: 20px auto; /* 上下外边距为 20px，左右自动居中 */
+  padding: 40px; /* 设置内边距为 40px */
+  width: 80%; /* 设置宽度为父元素的 80% */
+  text-align: center; /* 文本居中对齐 */
+}
+section img {
+  border-radius: 12px; /* 设置图片圆角 */
+  width: 300px; /* 设置图片宽度为 300px */
+  height: auto; /* 高度自适应 */
+  margin: 0 auto 30px; /* 上外边距为 0，左右自动居中，下外边距为 30px */
+  display: block; /* 块级显示 */
+}
+section h2, section h3, section p {
+  color: #333; /* 设置文本颜色为深灰色 */
+}
+section p:last-child {
+  margin-bottom: 0; /* 最后一个段落无底部外边距 */
+}
+section ul {
+  list-style: none; /* 清除列表样式 */
+  padding: 0; /* 清除内边距 */
+  display: flex; /* 使用 Flex 布局 */
+  flex-wrap: wrap; /* 允许换行 */
+  justify-content: center; /* 水平居中对齐 */
+}
+section ul li {
+  margin: 15px; /* 设置外边距为 15px */
+  flex: 1 1 200px; /* 设置 Flex 属性 */
+  color: #921f1f; /* 设置文本颜色为深红色 */
+}
+section ul li a {
+  color: #8608ec; /* 设置链接文本颜色为紫色 */
+  text-decoration: none; /* 清除下划线 */
+  font-size: 17px; /* 设置字体大小为 17px */
+  display: block; /* 块级显示 */
+  padding: 15px; /* 设置内边距为 15px */
+  border-radius: 8px; /* 设置圆角 */
+  background: linear-gradient(to right, #ffb6c1, #ffec99); /* 设置背景渐变 */
+  transition: background 0.3s ease; /* 添加过渡效果 */
+}
+section ul li a:hover {
+  background: linear-gradient(to right, #ffec99, #ffb6c1); /* 鼠标悬停时的背景渐变 */
+  color: #f53708; /* 鼠标悬停时的文本颜色 */
+}
+section ul li a:active {
+  background: linear-gradient(to right, #ffb6c1, #ffec99); /* 链接被点击时的背景渐变 */
+}
+/* 设置 Call to Action 区域样式 */
+section.cta {
+  background-color: rgba(255, 255, 255, 0.9); /* 设置背景颜色为白色带透明度 */
+  border-radius: 12px; /* 设置圆角 */
+  margin: 20px auto; /* 上下外边距为 20px，左右自动居中 */
+  padding: 40px; /* 设置内边距为 40px */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 设置阴影 */
+  width: 80%; /* 设置宽度为父元素的 80% */
+  text-align: center; /* 文本居中对齐 */
+}
+section.cta h2, section.cta p {
+  color: #333; /* 设置文本颜色为深灰色 */
+}
+section.cta div {
+  margin-top: 100px; /* 顶部外边距为 100px */
+  display: flex; /* 使用 Flex 布局 */
+  justify-content: space-around; /* 均匀分布子元素 */
+}
+section.cta a.cta-button {
+  text-decoration: none; /* 清除下划线 */
+  color: #fff; /* 设置文本颜色为白色 */
+  font-size: 17px; /* 设置字体大小为 17px */
+  padding: 15px 30px; /* 设置内边距 */
+  border-radius: 8px; /* 设置圆角 */
+  background: linear-gradient(to right, #4cb8c4, #3cd3ad); /* 设置背景渐变 */
+  transition: background 0.3s ease; /* 添加过渡效果 */
+}
+section.cta a.cta-button:hover {
+  background: linear-gradient(to right, #3cd3ad, #4cb8c4); /* 鼠标悬停时的背景渐变 */
+  color: #d8f572; /* 鼠标悬停时的文本颜色 */
+}
+section.cta a.cta-button:active {
+  background: linear-gradient(to right, #4cb8c4, #3cd3ad); /* 链接被点击时的背景渐变 */
+}
+/* 设置页脚样式 */
+footer {
+  color: #7fe9e9; /* 设置文本颜色为浅蓝色 */
+  text-align: center; /* 文本居中对齐 */
+  padding: 10px 0; /* 设置上下内边距为 10px，左右内边距为 0 */
+  position: fixed; /* 设置固定定位 */
+  bottom: 0; /* 距离底部为 0 */
+  width: 100%; /* 宽度占满整个屏幕 */
+}

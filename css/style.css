@@ -1,0 +1,112 @@
+/* 容器样式，设置最大宽度和居中 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* 设置全局样式 */
+body {
+  font-family: Arial, sans-serif; /* 设置字体 */
+  background-color: #f2f2f2; /* 设置背景颜色 */
+  margin: 0; /* 移除默认边距 */
+  padding: 0; /* 移除默认内边距 */
+  background-image: url(../images/音乐背景.jpg); /* 设置背景图片 */
+  background-size: cover; /* 背景图片填充整个容器 */
+  background-attachment: fixed; /* 背景图片固定 */
+  background-repeat: no-repeat; /* 背景图片不重复 */
+  background-position: center; /* 背景图片居中 */
+}
+/* 头部样式 */
+header {
+  background-color: #333; /* 设置背景颜色 */
+  background-image: url(../images/音乐背景.jpg); /* 设置背景图片 */
+  color: #7fe9e9; /* 设置文字颜色 */
+  padding: 20px 0; /* 设置内边距 */
+}
+/* 导航样式 */
+nav ul {
+  list-style: none; /* 移除列表样式 */
+  margin: 0; /* 移除外边距 */
+  padding: 0; /* 移除内边距 */
+}
+nav ul li {
+  display: inline; /* 显示为行内元素 */
+  margin-right: 40px; /* 右外边距 */
+  padding-left: 40px; /* 左内边距 */
+  font-size: 18px; /* 字体大小 */
+}
+nav ul li a {
+  color: #7fe9e9; /* 设置链接颜色 */
+  text-decoration: none; /* 移除下划线 */
+}
+nav ul li a:hover {
+  color: #ff9900; /* 鼠标悬停时链接颜色 */
+}
+/* 主要内容样式 */
+main {
+  padding: 20px; /* 设置内边距 */
+}
+/* 区块样式 */
+section {
+  background-color: #dff1f0; /* 设置背景颜色 */
+  margin-bottom: 20px; /* 底部外边距 */
+  padding: 20px; /* 设置内边距 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 设置阴影 */
+  border-radius: 5px; /* 设置圆角 */
+}
+/* 标题样式 */
+h2 {
+  color: #333; /* 设置颜色 */
+  font-size: 24px; /* 设置字体大小 */
+}
+/* 列表样式 */
+ul {
+  list-style: none; /* 移除列表样式 */
+  padding: 0; /* 移除内边距 */
+}
+li {
+  margin: 10px 0; /* 设置行间距 */
+}
+/* 底部样式 */
+footer {
+  background-color: #333; /* 设置背景颜色 */
+  background-image: url(../images/音乐背景.jpg); /* 设置背景图片 */
+  color: #7fe9e9; /* 设置文字颜色 */
+  text-align: center; /* 文本居中 */
+  padding: 10px 0; /* 设置内边距 */
+}
+/* 页面标题样式 */
+.yemian {
+  font-size: 30px; /* 设置字体大小 */
+  font-weight: bold; /* 加粗字体 */
+  color: #ff9900; /* 设置颜色 */
+}
+/* logo样式 */
+.logo {
+  font-size: 40px; /* 设置字体大小 */
+  font-weight: bold; /* 加粗字体 */
+  color: #f78383; /* 设置颜色 */
+  text-decoration: none; /* 移除下划线 */
+}
+/* 设置body高度为 3000px，页面就有滚动条显示啦 */
+/*body {
+  height: 3000px;
+}*/
+/* 回到顶部 */
+.backTop {
+  position: fixed; /* 固定定位 */
+  bottom: 250px; /* 距离底部的距离 */
+  right: 0;
+  margin-right: 20px; /* 右侧外边距 */
+  z-index: 999; /* 设置层级 */
+  width: 35px; /* 宽度 */
+  height: 35px; /* 高度 */
+  background-color: deepskyblue; /* 背景颜色 */
+  line-height: 35px; /* 文本垂直居中 */
+  text-align: center; /* 文本居中 */
+  font-size: 14px; /* 字体大小 */
+  color: white; /* 文字颜色 */
+  border-radius: 50%; /* 圆角 */
+  transition: all linear 0.5s; /* 过渡效果 */
+  cursor: pointer; /* 鼠标指针 */
+  opacity: 0; /* 初始透明度为0，隐藏 */
+}
